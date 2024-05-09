@@ -70,7 +70,7 @@ class MuvinnController extends Controller
     {
         $muvinn = Muvinn::find($request->id);
 
-        if (!isset($servico)) {
+        if (!isset($muvinn)) {
             return response()->json([
                 'status' => false,
                 'message' => "Serviço não encontrado"

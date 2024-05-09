@@ -8,12 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Muvinn extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'estado',
         'cidade',
         'endereco',
-        'tipos_moveis',
+        'tipos_imoveis',
         'preco',
         'banheiros',
         'quartos',
